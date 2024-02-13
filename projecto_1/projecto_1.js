@@ -7,7 +7,7 @@ let baseT = 0; //base time for noise function to move the waves
 let currentText = false;
 
 
-let art1P, art2E, art3T, art4G, art5N, art6M, art7C, art8U;
+//let art1P, art2E, art3T, art4G, art5N, art6M, art7C, art8U;
 
 let button1PVisible = true;
 let button2EVisible = true;
@@ -21,53 +21,53 @@ let defaultButtonVisible = true;
 
 let defaultButtonClicked = false;
 
-function preload() {
- art1P = loadImage('data/art1P_b.png');
- art2E = loadImage('data/art2E_b.png');
- art3T = loadImage('data/art3T_b.png');
- art4G = loadImage('data/art4G_b.png');
- art5N = loadImage('data/art5N_b.png');
- art6M = loadImage('data/art6M_b.png');
- art7C = loadImage('data/art7C_b.png');
- art8U = loadImage('data/art8U_b.png');
-}
+//function preload() {
+// art1P = loadImage('data/art1P_b.png');
+// art2E = loadImage('data/art2E_b.png');
+// art3T = loadImage('data/art3T_b.png');
+// art4G = loadImage('data/art4G_b.png');
+// art5N = loadImage('data/art5N_b.png');
+// art6M = loadImage('data/art6M_b.png');
+// art7C = loadImage('data/art7C_b.png');
+// art8U = loadImage('data/art8U_b.png');
+//}
 
 
 function setup() {
   createCanvas(1600, 900); 
   
   //top row of picture buttons
-  button1P = createImg('data/penyo.png');
+  button1P = createImg('data/art1P.png');
   button1P.position(25, 82);
   button1P.mousePressed(art1PWaves);
   
-  button2E = createImg('data/pile.png');
+  button2E = createImg('data/art2E.png');
   button2E.position(410, 150);
   button2E.mousePressed(art2EWaves);
   
-  button3T = createImg('data/wee.png');
+  button3T = createImg('data/art3T.png');
   button3T.position(840, 51);
   button3T.mousePressed(art3TWaves);
   
-  button4G = createImg('data/misty.png');
+  button4G = createImg('data/art4G.png');
   button4G.position(1270, 198);
   button4G.mousePressed(art4GWaves);
   
   
   //bottom row
-  button5N = createImg('data/oops.png');
+  button5N = createImg('data/art5N.png');
   button5N.position(11, 472);
   button5N.mousePressed(art5NWaves);
   
-  button6M = createImg('data/alone.png');
+  button6M = createImg('data/art6M.png');
   button6M.position(445, 540);
   button6M.mousePressed(art6MWaves);
   
-  button7C = createImg('data/dashed.png');
+  button7C = createImg('data/art7C.png');
   button7C.position(860, 370);
   button7C.mousePressed(art7CWaves);
   
-  button8U = createImg('data/spoopy.png');
+  button8U = createImg('data/art8U.png');
   button8U.position(1189, 530);
   button8U.mousePressed(art8UWaves);
   
@@ -179,7 +179,7 @@ function defaultWaves() {
 
 // Define functions for each button
 function art1PWaves() {
-  image(art1P, 100, 100);
+//  image(art1P, 100, 100);
   waveMaxHeight = 500; // Change wave height
   currentText = true;
   currentText = 'Product Imageboard for Ponyo: Hayao Miyazaki, 2008, markers and watercolor (Ghibli Museum) \n This work depicts an imageboard for the eighth Ghibli movie, Ponyo. Not concept art, not a storyboard, the calming piece depicts the underwater realm of Fujimoto, the once-human wizard, \n father of the titular main character Ponyo/Brunhilde. Ponyo itself is a beautiful depiction of one’s love for the ocean, and how humans can peacefully coexist with the land (and sea) they occupy \n if they give in to the welcoming embrace of the waves. Ponyo is a love letter to youth, young love, and those days at the beach where your skin is sun-kissed and the tide is your blanket.';
@@ -195,7 +195,7 @@ function art1PWaves() {
 }
 
 function art2EWaves() {
-  image(art2E, 100, 100);
+//  image(art2E, 100, 100);
   waveMaxHeight = 110;
   currentText = true;
   currentText = 'The View from el Pilon de Azucar: Elizabeth Thorn, 2020, digital photograph (LonelyPlanet.com) \n The View from el Pilon de Azucar is the only photograph of the collection, and depicts the view from the highest point from South America, courtesy of the Punta Gallinas peninsula, Colombia. \n A pale white rock, Kamaici, Lord of All Sea Things, defiantly juts up from the sand, crowned by a shrine to the Virgin Mary, Mother of God. They look out on the Carribbean Sea, \n these two divine beings of the Wayuu people and Christians, their children ever in conflict but their hearts in the same place.';
@@ -210,7 +210,7 @@ function art2EWaves() {
 }
 
 function art3TWaves() {
-  image(arteT, 100, 100);
+//  image(arteT, 100, 100);
   waveMaxHeight = 280;
   currentText = true;
   currentText = 'The Journey of the Sun god Re: Unknown artist, 990-969 BC, mineral pigments, from the inner coffin of Nespawershefyt (Fitzwilliam Museum) \n The sun god Re sighs, pleased. His burning barge has blessed his subjects once more, their crops flourishing and their knowledge increasing. Yet their success come as a cost; \n in front of him he sees twilight approaching, and with it the world-ending serpent Apophis, its eyes and fanged mouth fixed on the barge. The sun would make a tasty morsel for the Great Serpent. \n Re steadies himself and turns to his servants, his warriors, his children, all armed to the teeth and looking to him for guidance, protection, life even. He smiles. The sun will rise again.';
@@ -224,7 +224,7 @@ function art3TWaves() {
 }
 
 function art4GWaves() {
-  image(art4G, 100, 100);
+//  image(art4G, 100, 100);
   waveMaxHeight = 150;
   currentText = true;
   currentText = 'Gray Day at the Sea: Max Beckmann, 1907, oil on canvas (St. Louis Art Museum) \n Gray Day at the Sea perfectly encapsulates the whirling eddies and thrashing waves surrendering to the calm of the shore, a relentless and predictable battle. \n The cracks and sand grains in this painting do not detract from the ambience, rather, they suck the reader into Max Beckmann’s day at the beach; the wind is whipping the waves up, \n and dark clouds hint at rain in a few hours. Better finish the painting before then.';
@@ -238,7 +238,7 @@ function art4GWaves() {
 }
 
 function art5NWaves() {
-  image(art5N, 100, 100);
+//  image(art5N, 100, 100);
   waveMaxHeight = 350;
   currentText = true;
   currentText = 'The Ninth Wave: Ivan Aivazovsky, 1897, oil on canvas (The State Russian Museum) \n The ninth wave refers to an old sailing expression that refers to a fantastically large wave that occurs after a leadup of eight smaller ones. The Ninth Wave by Ivan Aivazovsky \n depits such a phenomenon at the worst possible time. A group of people have just survived a heavy night storm. All that remains from their ship is a cross-shaped piece of wreckage, \n a sign that salvation is the only way to survive their watery predicament. While the sun rises and promises a new, hope-filled day, the passengers cling and pray to their god, \n hoping that the ninth wave will never come.';
@@ -252,8 +252,7 @@ function art5NWaves() {
 }
 
 function art6MWaves() {
-  image(art6M, 100, 100);
-  console.log('Displaying image');
+//  image(art6M, 100, 100);
   waveMaxHeight = 50;
   currentText = true;
   currentText = 'Two Men by the Sea: Caspar David Friedrich, 1817, oil on canvas (Alte Nationalgalerie) \n Two men staring into the endless horizon. What do they see? What are they looking for? The ocean is silent and empty. They are alone.';
@@ -267,7 +266,7 @@ function art6MWaves() {
 }
 
 function art7CWaves() {
-  image(art7C, 100, 100);
+//  image(art7C, 100, 100);
   waveMaxHeight = 400;
   currentText = 'Christ in the Storm on the Sea of Galilee: Rembrandt van Rijn, 1606-1669, oil on canvas (stolen from the Isabella Stewart Gardner Museum) \n Christ in the Storm on the Sea of Galilee holds a special space in the art sphere, not just as Rembrant’s sole seascape, but as a finely detailed frame of history, \n the wind still blowing years after Christ’s death. The panic of the disciples as they struggle to steady their boat and the contrast of the bright sea spray against \n the ominous clouds in the background creates an air of uncertainty; will they fall into the depths?';
     button1P.hide();
@@ -280,7 +279,7 @@ function art7CWaves() {
 }
 
 function art8UWaves() {
-  image(art8U, 100, 100);
+//  image(art8U, 100, 100);
   waveMaxHeight = 10;
   currentText = true;
   currentText = 'Umi-bōzu: Shigeru Mizuki, 1981, steel nibs and watercolor (the Yōkai Encyclopedia) \n The umi-bōzu are humongous creatures that originate from Japan. They normally appear while the sea is deceptively calm, keeping sailors on their toes no matter the weather. \n Umi-bōzu is included to show the danger that is always on the sea’s horizon, just out of the corner of your eye. The petrifying magnitutde of the umi-bōzu are nothing, however, \n when compared to the real-life eldritch horrors peering up from the dark depths of the ocean.';
